@@ -1,7 +1,6 @@
 <template>
   <div class="home">
    <CustomText tag="h1">Profile IgTv</CustomText>
-
   </div>
 </template>
 

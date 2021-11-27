@@ -1,8 +1,13 @@
 <template>
   <div class="story-bar">
-    <Avatar :size="41" /> <Avatar :size="41" /> <Avatar :size="41" />
-    <Avatar :size="41" /> <Avatar :size="41" /> <Avatar :size="41" /> <Avatar :size="41" />
 
+    <div class="story"><Avatar :size="55" /></div>
+    <div class="story"><Avatar :size="55" /></div>
+    <div class="story"><Avatar :size="55" /></div>
+    <div class="story"><Avatar :size="55" /></div>
+    <div class="story"><Avatar :size="55" /></div>
+    <div class="story"><Avatar :size="55" /></div>    <div class="story"><Avatar :size="55" /></div>
+    <div class="story"><Avatar :size="55" /></div>
   </div>
 </template>
 
@@ -19,12 +24,19 @@ export default {
 
 <style scoped>
 .story-bar {
-  height: 60px;
+  height: 70px;
+  display: flex;
   align-items: center;
-  border-block: rgba(255, 255, 255, 0.925);
-  display: inline-block;
+  padding-left: 16px;
+  padding-right: 16px;
+  justify-content: center;
+  margin-bottom: 10px;
+
 }
-avatar {
-  padding-left: 8px;
+.story {
+min-width: 80px;
+justify-content: center;
+align-items: center;
+
 }
 </style>
