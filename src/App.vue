@@ -24,6 +24,6 @@ export default {
 
 <style scoped>
 .main {
-  padding-top: 40px;
+  padding-top: 28px;
 }
 </style>

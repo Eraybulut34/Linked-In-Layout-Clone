@@ -39,19 +39,19 @@ children: [
     path: '/igtv',
     name: 'ProfileIGTV',
     component: () =>
-      import(/* webpackChunkName: "profile Post" */ '../views/profile/post')
+      import(/* webpackChunkName: "profile IGTV" */ '../views/profile/igtv')
   },
   {
     path: '/save',
     name: 'ProfileSave',
     component: () =>
-      import(/* webpackChunkName: "profile Post" */ '../views/profile/post')
+      import(/* webpackChunkName: "profile Save" */ '../views/profile/save')
   },
   {
     path: '/tag',
     name: 'ProfileTag',
     component: () =>
-      import(/* webpackChunkName: "profile Post" */ '../views/profile/post')
+      import(/* webpackChunkName: "profile Tag" */ '../views/profile/tag')
   }
 ]
   }
