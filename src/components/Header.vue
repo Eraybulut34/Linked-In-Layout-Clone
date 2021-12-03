@@ -1,22 +1,31 @@
 <template>
   <header class="header">
     <Container class="header-inner">
-   <router-link to="/" class="logo"> <IconGlobal/> </router-link>
+      <router-link to="/" class="logo"> <IconGlobal /> </router-link>
       <form class="search">
         <input type="text" placeholder="Search" class="search" />
       </form>
       <nav class="navigation">
         <router-link to="/" class="home-icon">
-          <IconHome/>
+          <IconHome />
+          <div class="home-text">Home</div>
         </router-link>
-        <router-link to="/direct" class="network-icon">
-          <IconNetwork/>
+        <router-link to="/direct" class="home-icon">
+          <IconNetwork />
+          <div class="home-text">Network</div>
         </router-link>
-        <router-link to="/explore" class="jobs-icon">
-          <IconJobs/>
+        <router-link to="/explore" class="home-icon">
+          <IconJobs />
+          <div class="home-text">Jobs</div>
         </router-link>
-        <router-link to="/profile"><IconMessaging/></router-link>
-        <router-link to="/profile"><IconNotifications/></router-link>
+        <router-link to="/profile" class="home-icon"
+          ><div class="messaging-icon"><IconMessaging /></div>
+          <div class="home-text">Messaging</div></router-link
+        >
+        <router-link to="/profile" class="notifications-icon"
+          ><div class="notifications-logo"><IconNotifications /></div>
+          <div class="home-text">Notifications</div></router-link
+        >
       </nav>
     </Container>
   </header>
@@ -54,14 +63,13 @@ export default {
   background-color: white;
 }
 .header-inner {
-height: var(--header-height);
+  height: var(--header-height);
   display: flex;
   align-items: center;
-  @media (--t) {
-    grid-template-columns: 1fr 1fr 1fr;
 
-    height: 53px;
-  }
+  grid-template-columns: 1fr 1fr 1fr;
+
+  height: 53px;
 }
 .logo {
   font-weight: bold;
@@ -73,23 +81,19 @@ height: var(--header-height);
 .search {
   display: none;
 
-    display: block;
-    text-align: center;
-
-   
+  display: block;
+  text-align: center;
 }
- input {
-      border: 2px solid rgb(var(--b6a));
-      border-radius: 5px;
-      background-color: rgb(var(--b3f));
-      margin-left: 5px;
-      height: 32px;
-      margin-bottom: 2px;
-      background-color: rgb(240, 242, 247);
-      width: 280px;
-
-
-  }
+input {
+  border: 2px solid rgb(var(--b6a));
+  border-radius: 5px;
+  background-color: rgb(var(--b3f));
+  margin-left: 5px;
+  height: 32px;
+  margin-bottom: 2px;
+  background-color: rgb(240, 242, 247);
+  width: 280px;
+}
 
 .navigation {
   z-index: 90;
@@ -97,25 +101,34 @@ height: var(--header-height);
   padding-left: 155px;
   right: 0;
   bottom: 0;
-  background-color: white;
   border-top: 1px solid rgb(var(--b6a));
-  height: 80px;
+  height: 55px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
   margin-top: 3px;
   width: 400px;
-  
-  @media (--t) {
-    height: auto;
-    border: 0;
-    position: static;
-    justify-content: flex-end;
-  
-  }
+  height: auto;
+  border: 0;
+  position: static;
+  justify-content: flex-end;
 }
-.left{
 
+.home-icon {
+  display: inline-block;
+  max-height: 48px;
+  color: rgb(87, 82, 82);
+}
+.notifications-icon{
+    display: inline-block;
+  max-height: 48px;
+    color: rgb(87, 82, 82);
+}
+.notifications-logo{
+  padding-left: 20px;
+}
+.messaging-icon{
+  padding-left: 25px;
 }
 </style>

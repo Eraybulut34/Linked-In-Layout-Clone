@@ -1,4 +1,4 @@
-# instagram-clone
+# linked-in-clone
 
 ## Project setup
 ```
