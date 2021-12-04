@@ -1,5 +1,7 @@
 # linked-in-clone
 
+# In this project, aimed to clone the homepage of Linkedin.com with using html,css, javascript and vue.js 
+
 ## Project setup
 ```
 npm install
